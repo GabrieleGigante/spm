@@ -1,15 +1,13 @@
 name: shared_preferences_manager
 description: A manager to make dynamic type shared preferences easier to manage.
-version: 0.0.1
-homepage:
+version: 0.0.3
+homepage: https://github.com/GabrieleGigante/spm
 
 environment:
   sdk: '>=2.12.0 <3.0.0'
   flutter: '>=1.17.0'
 
 dependencies:
-  flutter:
-    sdk: flutter
   shared_preferences: ^2.0.5
 
 dev_dependencies:
@@ -21,18 +19,6 @@ dev_dependencies:
 
 # The following section is specific to Flutter.
 flutter:
-  plugin:
-    platforms:
-      android:
-        package: it.gabrielegigante.shared_preferences_manager
-        pluginClass: SharedPreferencesManager
-      ios:
-        pluginClass: SharedPreferencesManager
-      macos:
-        pluginClass: SharedPreferencesManager
-      web:
-        filename: SharedPreferencesManager.dart
-        pluginClass: SharedPreferencesManager
 
   # To add assets to your package, add an assets section, like this:
   # assets:

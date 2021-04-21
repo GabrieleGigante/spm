@@ -1,14 +1,23 @@
 # shared_preferences_manager
 
-A new Flutter package project.
+## Usage
 
-## Getting Started
+To use this plugin, add shared_preferences_manager as a dependency in your pubspec.yaml file.
 
-This project is a starting point for a Dart
-[package](https://flutter.dev/developing-packages/),
-a library module containing code that can be shared easily across
-multiple Flutter or Dart projects.
+### 1. Instantiate the class
 
-For help getting started with Flutter, view our
-[online documentation](https://flutter.dev/docs), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+```
+SharedPreferencesManager spm = SharedPreferencesManager();
+```
+
+### Set Key/Value pair
+
+```
+spm.setKV('key', 'value');
+```
+
+### Get Key/Value pair
+
+```
+var result = await spm.getKV('key', 'default value');
+```
