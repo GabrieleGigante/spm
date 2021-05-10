@@ -1,3 +1,7 @@
+## 0.0.4
+
+removing preferences
+
 ## 0.0.3
 
 fixed the example

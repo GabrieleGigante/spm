@@ -30,9 +30,12 @@ class SharedPreferencesManager {
 
   ///remove a specific preference
   ///key='all' => removing all of the sharedPreferences
-  void removeSpecificSharedPreferences(var key) async {
+  void removePreference(String key) async {
     SharedPreferences sharedPreferences = await getSharedPreferencesInstance();
-    sharedPreferences.remove(key);
+    if (key == 'all') {
+      sharedPreferences.clear();
+    } else
+      sharedPreferences.remove(key);
   }
 
   ///gets a Key/Value pair from the preferences

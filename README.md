@@ -21,3 +21,15 @@ spm.setKV('key', 'value');
 ```
 var result = await spm.getKV('key', 'default value');
 ```
+
+### Remove preference
+
+```
+spm.removePreference('test_key');
+```
+
+### Clear preferences
+
+```
+spm.removePreference('all);
+```
