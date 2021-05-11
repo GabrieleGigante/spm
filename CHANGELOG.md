@@ -1,3 +1,7 @@
+## 0.0.5
+
+removed annoying 'valore nullo' debug log
+
 ## 0.0.4
 
 removing preferences

@@ -54,7 +54,6 @@ class SharedPreferencesManager {
       this._returnValue = sharedPreferences.getStringList(key);
     }
     if (this._returnValue == null) {
-      print("valore nullo");
       this._returnValue = value;
     }
     return this._returnValue;

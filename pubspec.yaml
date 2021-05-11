@@ -1,6 +1,6 @@
 name: shared_preferences_manager
 description: A manager to make dynamic type shared preferences easier to manage.
-version: 0.0.4
+version: 0.0.5
 homepage: https://github.com/GabrieleGigante/spm
 
 environment:
