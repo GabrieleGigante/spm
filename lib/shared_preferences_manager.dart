@@ -3,6 +3,11 @@ library shared_preferences_manager;
 import 'package:shared_preferences/shared_preferences.dart';
 
 class SharedPreferencesManager {
+  SharedPreferencesManager() {
+    // ignore: invalid_use_of_visible_for_testing_member
+    SharedPreferences.setMockInitialValues({});
+  }
+
   var _returnValue;
   dynamic getReturnValue() {
     return _returnValue;
@@ -66,10 +71,7 @@ class SharedPreferencesManager {
       lS?.add(value);
       sharedPreferences.setStringList(key, lS!);
     } catch (e) {
-      throw ("Problem in adding " +
-          value +
-          "to the String List, the error was" +
-          e.toString());
+      throw ("Problem in adding " + value + "to the String List, the error was" + e.toString());
     }
   }
 }
